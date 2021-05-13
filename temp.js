@@ -40,7 +40,7 @@ export const prodQuery = graphql`
 // const Product = (props) => <pre>{JSON.stringify(props, null, 2)}</pre>
 
 // This pulls in our specific query above.
-/**
+
 
 const ProductTemplate = ({ data }) => {
 
@@ -60,7 +60,7 @@ const ProductTemplate = ({ data }) => {
    //
 }
 
-**/
+
 
 const Product = props  => {
 <pre>{JSON.stringify(props, null, 2)}</pre>

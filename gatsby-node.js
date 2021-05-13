@@ -1,33 +1,28 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const result = await graphql(
-    `query {
-        products: allNodeProduct {
-          edges {
-            node {
-              field_product_description {
-                value
-              }
-              path {
-                alias
-              }
-              id
-            }
+    `query Product {
+      allNodeProduct {
+        nodes {
+          id
+          title
+          path {
+            alias
           }
         }
       }
-    `
+    }`
     )
 
   if (result.errors) {
     reporter.panic(result.errors)
   }
 
-  result.data.products.edges.forEach(({ node }) => {
+  result.data.allNodeProduct.nodes.forEach( product  => {
     actions.createPage({
-      path: node.path.alias,
-      component: require.resolve("./src/templates/d-product.js"),
+      path: product.path.alias,
+      component: require.resolve("./src/templates/product-data.js"),
       context: {
-        productId: node.id,
+        productId: product.id,
       },
     })
   })

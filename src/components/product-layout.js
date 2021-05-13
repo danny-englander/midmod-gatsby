@@ -1,7 +1,10 @@
-// import React from 'react';
-// import Image from "gatsby-image";
+ import React from 'react';
+ // import Image from "gatsby-image";
 
-// const Product = ({  title, desc, imageData, ImageAlt  }) => (
+const Product = () => <p>Products</p>
+
+
+ //const Product = ({  title, desc, imageData, ImageAlt  }) => (
 
 //   // Debug info below.
 //   // @TODO (For some reason this did not preview)
@@ -15,4 +18,4 @@
 //   </article>
 // )
 
-// export default Product
+ export default Product
