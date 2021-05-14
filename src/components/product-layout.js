@@ -1,21 +1,20 @@
- import React from 'react';
- // import Image from "gatsby-image";
+import React from "react"
+import { GatsbyImage } from "gatsby-plugin-image"
 
-const Product = () => <p>Products</p>
+// Placeholder.
+// const ProductLayout = () => <p>Products</p>
 
+// Debug info below.
+// const Product = (props) => {
+//   <pre>{JSON.stringify(props, null, 2)}</pre>
+// }
 
- //const Product = ({  title, desc, imageData, ImageAlt  }) => (
+const Product = ({ title, desc, imageData, ImageAlt }) => (
+  <article>
+    <h1>{title}</h1>
+    <GatsbyImage image={imageData} alt={ImageAlt} />
+    <div dangerouslySetInnerHTML={{ __html: desc }} />
+  </article>
+)
 
-//   // Debug info below.
-//   // @TODO (For some reason this did not preview)
-//   // const Product = ({ props }) => (
-//   // <pre>{JSON.stringify(props, null, 2)}</pre>
-
-//   <article>
-//     <h1>{title}</h1>
-//     <Image fluid={imageData} alt={ImageAlt} />
-//     <div dangerouslySetInnerHTML = {{ __html: desc }} />
-//   </article>
-// )
-
- export default Product
+export default Product
