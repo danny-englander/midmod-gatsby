@@ -1,5 +1,6 @@
 import React from "react"
 import {graphql } from 'gatsby';
+import "normalize.css"
 
 // Import components.
 import ProductHero from '../components/product-hero'

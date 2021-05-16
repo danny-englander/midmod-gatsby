@@ -1,5 +1,6 @@
 import { graphql } from 'gatsby';
 export const ProductFragment = graphql`
+
   fragment ProductFragment on node__product {
     title
     field_product_description {
