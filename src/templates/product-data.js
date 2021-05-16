@@ -10,6 +10,8 @@ import ProductHero from '../components/product-hero'
 //   <pre>{JSON.stringify(props, null, 2)}</pre>
 //   }
 
+// Here we create a fragment for the product node query.
+// The first few lines are derived from a custom graphQL query.
 export const prodQuery = graphql`
 query Product($productId: String!) {
   nodeProduct(id: {eq: $productId}) {

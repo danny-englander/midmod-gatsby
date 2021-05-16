@@ -1,6 +1,9 @@
 import { graphql } from 'gatsby';
-export const ProductFragment = graphql`
 
+// Custom product query fragment.
+// Note gatsbyImageData(layout: FULL_WIDTH)
+// is using the new gatsby-plugin-image.
+export const ProductFragment = graphql`
   fragment ProductFragment on node__product {
     title
     field_product_description {

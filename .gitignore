@@ -69,4 +69,4 @@ yarn-error.log
 .yarn-integrity
 .idea
 
-.code-workspace
+*.code-workspace
