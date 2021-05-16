@@ -3,7 +3,7 @@ import {graphql } from 'gatsby';
 import "normalize.css"
 
 // Import components.
-import ProductHero from '../components/product-hero'
+import ProductHero from '../components/Hero/product-hero'
 
 // Debug the output using JSON.stringify.
 // const Product = props  => {
