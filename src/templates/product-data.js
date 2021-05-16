@@ -12,26 +12,7 @@ import ProductHero from '../components/product-hero'
 export const prodQuery = graphql`
 query Product($productId: String!) {
   nodeProduct(id: {eq: $productId}) {
-    title
-    field_product_description {
-      processed
-    }
-    relationships {
-      field_product_hero {
-        field_media_image {
-          alt
-        }
-        relationships {
-          field_media_image {
-            localFile {
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
-              }
-            }
-          }
-        }
-      }
-    }
+    ...ProductFragment
   }
 }
 `;
