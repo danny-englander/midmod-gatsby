@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'MidCentury Modern Shop',
+    title: 'Mid-Century Modern Shop',
     description: ''
   },
   plugins: [
@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: `gatsby-source-drupal`,
       options: {
-        baseUrl: `http://midmodsource.docksal/`,
+        baseUrl: `http://midmodsource.lndo.site/`,
       },
     },
   ]

@@ -1,3 +1,9 @@
+/**
+ * Implement Gatsby's Node APIs in this file.
+ *
+ * See: https://www.gatsbyjs.org/docs/node-apis/
+ */
+// Basic query for products.
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const result = await graphql(
     `query Product {

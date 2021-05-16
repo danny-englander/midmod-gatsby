@@ -3,18 +3,17 @@ import { GatsbyImage } from "gatsby-plugin-image"
 
 // Placeholder.
 // const ProductLayout = () => <p>Products</p>
-
 // Debug info below.
 // const Product = (props) => {
 //   <pre>{JSON.stringify(props, null, 2)}</pre>
 // }
 
-const Product = ({ title, desc, imageData, ImageAlt }) => (
+// Define the product array from the data file.
+const ProductHero = ({ title, desc, imageData, ImageAlt }) => (
   <article>
-    <h1>{title}</h1>
     <GatsbyImage image={imageData} alt={ImageAlt} />
     <div dangerouslySetInnerHTML={{ __html: desc }} />
   </article>
 )
 
-export default Product
+export default ProductHero
